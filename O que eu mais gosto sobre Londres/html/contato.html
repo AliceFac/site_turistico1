@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+	<link rel="icon" href="../img/flag.png">
+    <link href="../css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../css/contato.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="nav-bar">
+		<header>
+			<div class="nav-itens">
+				<div class="main-title">
+					<h1>O que eu mais gosto sobre Londres<h1>
+				</div>
+				<nav>
+					<a href="../index.html">Início</a> <a href="sobre.html">Sobre</a> <a style="background: #ddd; color: black" href="contato.html">Contato</a>
+				</nav>
+			</div>
+		</header>
+	<form id= "form" action="/api" method="post">
+		<div>
+			<label for="nome">Nome:</label> 
+			<input type="text" id="nome">
+		</div>
+		<div>
+			<label for="email">E-mail:</label> 
+			<input type="email" id="email">
+		</div>
+		<div>
+			<label for="msg">Mensagem:</label> 
+			<br>
+			<textarea id="msg"></textarea> <button type="button" onclick="send()">Enviar Mensagem</button>
+		</div>
+	</form>
+	<script>
+		const nome = document.getElementById ("nome")
+		const email = document.getElementById ("email")
+		const msg = document.getElementById ("msg")
+		const formData = [nome, email, msg]
+		function send () {
+			for (var key in formData) {
+    		console.log(formData[key].id, ":", formData[key].value);
+			}
+			alert("Mensagem enviada com sucesso!");
+			for (var key in formData) {
+    		formData[key].value = []
+			}
+}
+	</script>
+</body>
+</html>

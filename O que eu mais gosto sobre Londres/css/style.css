@@ -1,0 +1,113 @@
+body {
+    background-color: #8E684F;
+}
+
+header {
+    overflow: hidden;
+    background-color: #333;
+    top: 0; 
+    width: 100%; 
+}
+      
+header a:hover {
+    background: #ddd;
+    color: black;
+}
+
+header a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.main-title {
+    text-shadow: 2px 2px 1px #000000;
+    color: #FFFFFF;
+    font-family: Vidaloka;
+    background: transparent; 
+    font-size: 48px;
+    line-height: 58px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;                                                                         ;
+}
+
+.links-list {
+    margin-top: 20px;
+    margin-right: 20px;
+    background-color: #a69d6f;
+    width: 250px;
+    padding: 20px;
+    display: flexbox;
+    position: relative;
+    float: right;
+    border-radius: 10px;
+}
+
+.links {
+    color: #ffffff;
+    font-family: Vidaloka, sans-serif;
+    font-size: 1.3rem;
+    text-shadow: 1px 1px 0.5px #000000;
+}
+
+.links:hover {
+    color: #9b0101;
+}
+
+.item-card {
+    background-color: #63492b;
+    width: 850px;
+    height: 420px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 20px;
+}
+
+.item-card:hover {
+    transform: scale(1.04);
+}
+
+.card-title {
+    text-shadow: 2px 2px 1px #000000;
+    color: #ffffff;
+    font-family: Vidaloka, sans-serif;
+    background: transparent; 
+    font-size: 30px;
+    margin-left: 20px;
+    padding-top: 30px;
+}
+
+.images {
+    box-sizing: border-box;
+    width: 300px;
+    height: 180px;
+    margin-top: 20px;
+    border: 2px solid #FFFFFF;
+    box-shadow: 3px 3px 3px #000000;
+    flex-basis: 40%;
+    float: left;
+    margin-right: 20px;    
+    margin-bottom: 10px;
+}
+
+.dotted-line{
+    border-bottom: 3px dotted #000000;
+    width: 820px;
+    height: 15px;
+  } 
+
+.card-info {
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: Vidaloka, sans-serif;
+    text-shadow: 1px 1px 1px #000000;
+    line-height: 20px;
+}
